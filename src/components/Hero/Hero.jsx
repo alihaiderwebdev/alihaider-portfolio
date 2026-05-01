@@ -1,5 +1,6 @@
 import { personal } from "../../data/portfolio";
 import "./Hero.css";
+import aliphoto from "../../assets/images/aliphoto.webp";
 
 const techStack = ["React.js", "Node.js", "MongoDB", "Express.js", "REST APIs", "JWT"];
 
@@ -59,7 +60,9 @@ export default function Hero() {
 
         <div className="hero__visual animate-fade-up delay-2">
           <div className="hero__card">
-            <div className="hero__avatar">AH</div>
+            <div className="hero__avatar"><img src={aliphoto} alt="Ali Haider" />
+
+            </div>
             <h3 className="hero__card-name">{personal.name}</h3>
             <p className="hero__card-role">React.js · MERN Stack Developer</p>
 
@@ -93,7 +96,7 @@ export default function Hero() {
               <a href={personal.links.github} target="_blank" rel="noreferrer" className="hero__icon-link">
                 gh
               </a>
-              <a href={personal.links.portfolio} target="_blank" rel="noreferrer" className="hero__icon-link">
+              <a href={personal.links.github} target="_blank" rel="noreferrer" className="hero__icon-link">
                 🔗
               </a>
             </div>

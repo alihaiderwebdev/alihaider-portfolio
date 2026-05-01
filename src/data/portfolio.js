@@ -61,7 +61,7 @@ export const projects = [
     ],
     stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "RBAC"],
     github: "https://github.com/alihaiderwebdev",
-    live: "https://alihaiderwebdev.github.io",
+    live: "https://github.com/alihaiderwebdev",
     color: "#639922",
   },
   {

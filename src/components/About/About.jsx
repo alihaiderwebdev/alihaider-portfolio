@@ -38,7 +38,7 @@ export default function About() {
             </p>
 
             <div className="about-actions">
-              <a href={personal.links.portfolio} target="_blank" rel="noreferrer" className="btn btn-primary">
+              <a href={personal.links.github} target="_blank" rel="noreferrer" className="btn btn-primary">
                 View Portfolio ↗
               </a>
               <a href={personal.links.github} target="_blank" rel="noreferrer" className="btn btn-outline">

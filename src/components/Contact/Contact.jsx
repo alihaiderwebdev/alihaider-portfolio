@@ -25,7 +25,7 @@ export default function Contact() {
           <a href={personal.links.github} target="_blank" rel="noreferrer" className="contact-link">
             GitHub
           </a>
-          <a href={personal.links.portfolio} target="_blank" rel="noreferrer" className="contact-link">
+          <a href={personal.links.github} target="_blank" rel="noreferrer" className="contact-link">
             Portfolio
           </a>
           <a href={`tel:${personal.phone}`} className="contact-link">
