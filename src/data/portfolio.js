@@ -102,7 +102,7 @@ export const experience = [
     role: "Frontend Developer Intern",
     company: "7 Kings Code",
     location: "Lahore, Pakistan",
-    period: "Jan 2026 – Mar 2026",
+    period: "Jan 2026 – April 2026",
     type: "On-site",
     bullets: [
       "Built 10+ responsive pages in Sitecore Page Builder with React component architecture, cutting manual page-assembly time by ~40%.",
@@ -115,7 +115,7 @@ export const experience = [
     role: "MERN Stack Developer Intern",
     company: "U Devs",
     location: "Remote",
-    period: "Jan 2025 – Present",
+    period: "Jan 2025 – April 2026",
     type: "Remote",
     bullets: [
       "Developed 5+ full-stack application modules (auth, CRUD, API integration) using the complete MERN stack.",
