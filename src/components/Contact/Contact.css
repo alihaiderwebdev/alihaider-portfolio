@@ -1,0 +1,96 @@
+.contact-section {
+  background: var(--green-900);
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 1.5rem;
+  text-align: center;
+}
+
+.contact-bg-pattern {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(99,153,34,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(59,109,17,0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.contact-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-eyebrow {
+  color: var(--green-200);
+  justify-content: center;
+}
+
+.contact-eyebrow::before {
+  background: var(--green-200);
+}
+
+.contact-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 6vw, 56px);
+  color: white;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.contact-desc {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 600;
+  color: var(--green-100);
+  text-decoration: none;
+  border-bottom: 2px solid var(--green-600);
+  padding-bottom: 4px;
+  margin-bottom: 3rem;
+  transition: var(--transition);
+  letter-spacing: -0.5px;
+}
+
+.contact-email:hover {
+  color: white;
+  border-color: var(--green-200);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 24px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .contact-section { padding: 5rem 1.25rem; }
+  .contact-links { flex-direction: column; align-items: center; }
+}
