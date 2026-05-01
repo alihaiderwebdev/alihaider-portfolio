@@ -1,0 +1,132 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+  height: 68px;
+  transition: all 0.3s ease;
+}
+
+.navbar--scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--gray-100);
+  box-shadow: 0 4px 24px rgba(59,109,17,0.06);
+}
+
+.navbar__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navbar__logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: var(--green-600);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-bracket {
+  color: var(--green-400);
+  font-size: 18px;
+  font-family: 'Outfit', monospace;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar__link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 100px;
+  transition: var(--transition);
+}
+
+.navbar__link:hover {
+  color: var(--green-600);
+  background: var(--green-50);
+}
+
+.navbar__link--active {
+  color: var(--green-600);
+  background: var(--green-50);
+}
+
+.navbar__cta {
+  font-size: 14px;
+  padding: 9px 22px;
+}
+
+.navbar__mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar__mobile-menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--green-600);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.25rem;
+  }
+
+  .navbar__links {
+    display: none;
+    position: fixed;
+    top: 68px; left: 0; right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gray-100);
+    box-shadow: var(--shadow);
+    gap: 0.5rem;
+  }
+
+  .navbar__links--open {
+    display: flex;
+  }
+
+  .navbar__link {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar__mobile-menu {
+    display: flex;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+}
