@@ -118,7 +118,7 @@ export const experience = [
     period: "Jan 2025 – April 2026",
     type: "Remote",
     bullets: [
-      "Developed 5+ full-stack application modules (auth, CRUD, API integration) using the complete MERN stack.",
+      "Led a 6-member team to build a healthcare SaaS platform with Patient, Doctor, and Admin dashboards featuring real-time appointment scheduling.",
       "Delivered pixel-perfect, mobile-first UIs with React Hooks, Flexbox/Grid, and Bootstrap across all major browsers.",
       "Applied Git branching strategies and clean code standards across every deliverable.",
     ],
