@@ -1,4 +1,4 @@
-import { experience, education } from "../data/portfolio";
+import { experience, education } from "../../data/portfolio";
 import "./Experience.css";
 
 export default function Experience() {

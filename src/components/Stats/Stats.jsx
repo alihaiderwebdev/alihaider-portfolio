@@ -1,4 +1,4 @@
-import { stats } from "../data/portfolio";
+import { stats } from "../../data/portfolio";
 import "./Stats.css";
 
 export default function Stats() {

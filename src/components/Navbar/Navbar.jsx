@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { personal } from "../data/portfolio";
+import { personal } from "../../data/portfolio";
 
 const navLinks = [
   { href: "#skills", label: "Skills" },

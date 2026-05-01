@@ -1,4 +1,4 @@
-import { personal } from "../data/portfolio";
+import { personal } from "../../data/portfolio";
 import "./Hero.css";
 
 const techStack = ["React.js", "Node.js", "MongoDB", "Express.js", "REST APIs", "JWT"];

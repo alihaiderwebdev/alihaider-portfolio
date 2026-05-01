@@ -1,4 +1,4 @@
-import { personal } from "../data/portfolio";
+import { personal } from "../../data/portfolio";
 import "./Contact.css";
 
 export default function Contact() {

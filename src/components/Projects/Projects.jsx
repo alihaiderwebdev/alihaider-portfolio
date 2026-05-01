@@ -1,4 +1,4 @@
-import { projects } from "../data/portfolio";
+import { projects } from "../../data/portfolio";
 import "./Projects.css";
 
 export default function Projects() {
