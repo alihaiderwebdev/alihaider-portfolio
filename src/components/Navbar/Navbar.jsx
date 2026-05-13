@@ -27,10 +27,10 @@ import "./Navbar.css";
 
 const NAV_LINKS = [
   { id: "hero", label: "Home", num: "01" },
-  { id: "skills", label: "Skills", num: "02" },
-  { id: "projects", label: "Projects", num: "03" },
-  { id: "experience", label: "Experience", num: "04" },
-  { id: "about", label: "About", num: "05" },
+  { id: "about", label: "About", num: "02" },
+  { id: "skills", label: "Skills", num: "03" },
+  { id: "projects", label: "Projects", num: "04" },
+  { id: "experience", label: "Experience", num: "05" }, 
   { id: "contact", label: "Contact", num: "06" },
 ];
 
