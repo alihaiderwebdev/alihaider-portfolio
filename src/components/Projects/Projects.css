@@ -1,181 +1,179 @@
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+/* SECTION — KEEP YOUR ORIGINAL BACKGROUND SYSTEM */
+.projects-section {
   position: relative;
+  background: var(--proj-bg); /* ✅ restored */
+  padding: var(--section-pad-lg) 0 !important;
+  overflow: hidden;
 }
 
-.project-card--featured {
-  grid-column: 1 / -1;
-  flex-direction: row;
-}
-
-.project-card__featured-bar {
-  position: absolute;
-  top: 16px; right: 16px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--green-800);
-  background: var(--green-50);
-  border: 1px solid var(--green-100);
-  padding: 4px 12px;
-  border-radius: 100px;
-}
-
-.project-card__body {
-  padding: 2rem;
-  flex: 1;
+/* STACK WRAPPER */
+.projects-stack {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
-.project-card__top {
+/* CARD */
+.project-card {
+  background: var(--proj-surface) !important;
+  border-radius: 20px !important;
+  border: 1px solid var(--proj-border) !important;
+  overflow: hidden;
+}
+
+/* LAYOUT */
+.project-card__frame {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1rem;
+  flex-direction: row;
+  gap: 20px;
+  min-height: 380px;
 }
 
-.project-card__live-indicator {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--green-600);
-}
-
-.project-card__live-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--green-400);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.project-card__title {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-1);
-  margin-bottom: 0.75rem;
-  line-height: 1.3;
-}
-
-.project-card__desc {
-  font-size: 14px;
-  color: var(--text-2);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  flex: 1;
-}
-
-.project-card__metrics {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.25rem;
-  padding: 1rem;
-  background: var(--gray-50);
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--gray-100);
-}
-
-.project-metric {
-  text-align: center;
-}
-
-.project-metric__val {
-  display: block;
-  font-family: 'DM Serif Display', serif;
-  font-size: 24px;
-  color: var(--green-500);
-  line-height: 1;
-  margin-bottom: 4px;
-}
-
-.project-metric__lbl {
-  font-size: 11px;
-  color: var(--text-3);
-  font-weight: 500;
-}
-
-.project-card__stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 1.5rem;
-}
-
-.project-stack-tag {
-  font-size: 12px;
-  color: var(--text-2);
-  background: var(--gray-100);
-  padding: 4px 12px;
-  border-radius: 100px;
-  font-weight: 500;
-}
-
-.project-card__links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: auto;
-}
-
-.project-card__links .btn {
-  font-size: 14px;
-  padding: 10px 20px;
-}
-
-/* VISUAL */
-.project-card__visual {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--project-color, #639922) 10%, white), color-mix(in srgb, var(--project-color, #639922) 20%, white));
+/* IMAGE SIDE */
+.project-card__media {
+  width: 45%;
+  background: var(--proj-surface-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
-  padding: 2rem;
-  color: var(--project-color, #639922);
 }
 
-.project-card--featured .project-card__visual {
-  min-width: 300px;
-  max-width: 360px;
-}
-
-.project-card__visual svg {
+/* IMAGE */
+.project-card__image {
   width: 100%;
-  max-width: 220px;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+.project-card:hover .project-card__image {
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+.project-card__body {
+  width: 55%;
+  padding: 30px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* TITLE */
+.project-card__title {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: var(--proj-text) !important;
+}
+
+/* DESCRIPTION */
+.project-card__desc {
+  font-size: 14px;
+  color: var(--proj-text-muted) !important;
+  line-height: 1.6;
+}
+
+/* STACK */
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* TAG */
+.project-tag {
+  font-size: 12px;
+  padding: 5px 10px;
+  background: var(--proj-surface-2);
+  border-radius: 6px;
+  color: var(--proj-text-muted);
+  border: 1px solid var(--proj-border);
+}
+
+/* BUTTONS */
+.project-btn {
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+/* PRIMARY */
+.project-btn.primary {
+  background: var(--gradient-accent) !important;
+  color: #fff !important;
+}
+
+/* SECONDARY */
+.project-btn.secondary {
+  border: 1px solid var(--proj-accent) !important;
+  color: var(--proj-accent) !important;
+}
+
+/* FEATURED */
+.project-card__featured {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--proj-accent);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+/* =========================
+   RESPONSIVE FIX ONLY
+   ========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .project-card__frame {
+  flex-direction: column;
   }
 
-  .project-card--featured {
+  .project-card__media ,
+  .project-card__body {
+     width: 100%;
+  
+  }
+
+  .project-card__media {
+    height: 260px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .project-card__frame {
     flex-direction: column;
   }
 
-  .project-card--featured .project-card__visual {
-    min-width: unset;
-    max-width: unset;
-    min-height: 180px;
+  .project-card__media {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-card__body {
+    width: 100%;
+    padding: 20px !important;
+  }
+
+  .project-card__title {
+    font-size: 18px !important;
+  }
+
+  .project-card__desc {
+    font-size: 13px;
   }
 }
 
+/* SMALL MOBILE */
 @media (max-width: 480px) {
-  .project-card__body {
-    padding: 1.5rem;
+  .project-card__media {
+    height: 180px;
   }
 
-  .project-card__metrics {
-    gap: 1rem;
+  .project-btn {
+    width: 100%;
   }
 }

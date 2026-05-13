@@ -12,16 +12,9 @@ export const personal = {
   links: {
     github: "https://github.com/alihaiderwebdev",
     linkedin: "https://linkedin.com/in/alihaiderjs",
-    portfolio: "https://alihaiderwebdev.github.io",
+    portfolio: "https://alihaiderwebdev.me",
   },
 };
-
-export const stats = [
-  { value: "2+", label: "Internships" },
-  { value: "25+", label: "Bugs Resolved" },
-  { value: "10+", label: "Pages Built" },
-  { value: "12+", label: "API Endpoints" },
-];
 
 export const skills = [
   {
@@ -80,21 +73,21 @@ export const projects = [
     live: "https://www.alurareset.com",
     color: "#3B6D11",
   },
-  {
-    id: 3,
-    title: "CMS Page Builder",
-    badge: "Sitecore · React",
-    featured: false,
-    description:
-      "Built 10+ responsive pages in Sitecore Page Builder with drag-and-drop layouts. Cut manual page-assembly time by ~40% enabling non-technical editors to publish independently.",
-    metrics: [
-      { value: "10+", label: "Pages Built" },
-      { value: "40%", label: "Time Saved" },
-      { value: "100%", label: "Cross-Device" },
-    ],
-    stack: ["React.js", "Sitecore", "Bootstrap", "Agile", "Jira"],
-    color: "#27500A",
-  },
+  // {
+  //   id: 3,
+  //   title: "CMS Page Builder",
+  //   badge: "Sitecore · React",
+  //   featured: false,
+  //   description:
+  //     "Built 10+ responsive pages in Sitecore Page Builder with drag-and-drop layouts. Cut manual page-assembly time by ~40% enabling non-technical editors to publish independently.",
+  //   metrics: [
+  //     { value: "10+", label: "Pages Built" },
+  //     { value: "40%", label: "Time Saved" },
+  //     { value: "100%", label: "Cross-Device" },
+  //   ],
+  //   stack: ["React.js", "Sitecore", "Bootstrap", "Agile", "Jira"],
+  //   color: "#27500A",
+  // },
 ];
 
 export const experience = [
@@ -115,7 +108,7 @@ export const experience = [
     role: "MERN Stack Developer Intern",
     company: "U Devs",
     location: "Remote",
-    period: "Jan 2025 – April 2026",
+    period: "Jan 2026 – March 2026",
     type: "Remote",
     bullets: [
       "Led a 6-member team to build a healthcare SaaS platform with Patient, Doctor, and Admin dashboards featuring real-time appointment scheduling.",
@@ -131,9 +124,15 @@ export const education = [
     institution: "University of Science & Technology, Lahore",
     year: "Graduated 2024",
   },
+ 
   {
     degree: "Full Stack Web Development",
     institution: "Isttaa Institute · Arfa Software Technology Park",
     year: "Aug 2025 – Feb 2026",
+  },
+   {
+    degree: "ICS (Intermediate in Computer Science)",
+    institution: "Superior College",
+    year: "2018 – 2020",
   },
 ];
